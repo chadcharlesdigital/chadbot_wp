@@ -96,7 +96,7 @@ class ChadBot {
     public function render_chadbot_div() {
         // This div is where your React app will mount.
         // Create React App typically uses 'root' as the ID.
-        return '<div class="chadbot">Loading ChadBot...</div>';
+        return '<div id="chadbot" class="chadbot">Loading ChadBot...</div>';
     }
 
 }

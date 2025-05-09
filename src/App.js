@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import ChadBot from './components/ChadBot';
 import ChatBotSettings from './settings/ChatBotSettings';

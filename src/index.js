@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-const targetElement = document.getElementsByClassName('chadbot')[0];
+const targetElement = document.getElementById('chadbot');
 
 if (targetElement) {
   const root = ReactDOM.createRoot(targetElement);
