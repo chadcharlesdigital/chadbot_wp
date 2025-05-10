@@ -30,6 +30,7 @@ const ChadBot = ({ settings, flow }) => {
 
     return (
         <ChatBot settings={settings} themes={themes} flow={completeFlow} />
+
     );
 };
 
