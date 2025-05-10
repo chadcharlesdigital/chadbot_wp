@@ -39,15 +39,11 @@ const homeConversation = {
             return `Ok, I'll meet you at the ${params.userInput} page.`
         },
 
-        path: "end"
     },
-    "respondWithLLM": {
-        message: "This will go to an LLM eventually and give a nice response",
-        path: "respondWithLLM"
-    },
-    "end": {
-        message: "See you, goodbye!"
-    }
+    // "respondWithLLM": {
+    //     message: "This will go to an LLM eventually and give a nice response",
+    //     path: "respondWithLLM"
+    // }
   }
 
 export default homeConversation;

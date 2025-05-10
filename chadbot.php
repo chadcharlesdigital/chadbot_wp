@@ -99,7 +99,15 @@ class ChadBot {
         return '<div id="chadbot" class="chadbot">Loading ChadBot...</div>';
     }
 
+        // Prevent cloning of the instance
+        private function __clone() {}
+
+        // Prevent unserialization of the instance
+        public function __wakeup() {}
+
 }
 
 // Initialize the plugin
 ChadBot::get_instance();
+
+include_once(plugin_dir_path(__FILE__) . 'includes/api_endpoints.php');
