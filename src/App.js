@@ -1,11 +1,11 @@
 import './App.css';
 import ChadBot from './components/ChadBot';
 import ChatBotSettings from './settings/ChatBotSettings';
-import mainConversation from './flows/mainConversation';
+import homeConversation from './flows/homeConversation';
 
 function App() {
   return (
-    <ChadBot settings={ChatBotSettings} flow={mainConversation} />
+    <ChadBot settings={ChatBotSettings} flow={homeConversation} />
   );
 }
 
