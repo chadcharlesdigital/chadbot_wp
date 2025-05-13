@@ -40,10 +40,6 @@ const homeConversation = {
         },
 
     },
-    // "respondWithLLM": {
-    //     message: "This will go to an LLM eventually and give a nice response",
-    //     path: "respondWithLLM"
-    // }
   }
 
 export default homeConversation;

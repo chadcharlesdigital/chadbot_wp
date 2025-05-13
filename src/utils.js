@@ -32,3 +32,16 @@ export async function callLLM(prompt) {
     }
 }
 
+export function formatChatHistory(history) {
+    const formattedEntries = history.map((i) => {
+        if (i.sender === "USER" || i.sender === "BOT") {
+            return `Role: ${i.sender} Message: ${i.content}`; // Remove trailing \n for now, join will handle newlines
+        }
+        return null; // Return null for entries to be filtered out
+    }).filter(entry => entry !== null); // Remove any null entries
+
+    // Join with double newlines to separate messages clearly
+    const finalString = formattedEntries.join('\n\n');
+    console.log("formatted history string:", finalString);
+    return finalString;
+}
