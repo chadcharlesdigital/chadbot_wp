@@ -16,7 +16,7 @@ function App() {
     };
     const lastSegment = getLastUrlSegment();
 
-    if (lastSegment === 'build-a-website') {
+    if (lastSegment === 'websites') {
       setFlow(buildWebsiteConversation);
     }else{
       setFlow(homeConversation);

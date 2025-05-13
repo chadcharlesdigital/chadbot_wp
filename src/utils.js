@@ -1,7 +1,7 @@
 export async function callLLM(prompt) {
     console.log("calling LLM with prompt: ", prompt);
     try {
-        const response = await fetch('/wp-json/chadbot/v1/process-message', {
+        const response = await fetch('https://digital-easy.local/wp-json/chadbot/v1/process-message', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

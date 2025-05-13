@@ -27,7 +27,7 @@ const homeConversation = {
             console.log(params);
             let redirectUrl = '/';
             if (params.userInput === "Websites") {
-                redirectUrl = '/build-a-website';
+                redirectUrl = '/websites';
             } else if (params.userInput === "SEO") {
                 redirectUrl = '/seo';
             } else if (params.userInput === "AI Services") {
