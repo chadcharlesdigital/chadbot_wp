@@ -19,7 +19,7 @@ if (!defined('ABSPATH')) {
 class ChadBot {
 
     //change this to false when you're ready to go live
-    private static $dev_mode = false;
+    private static $dev_mode = true;
 
     private static $instance = null;
     
