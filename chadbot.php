@@ -111,3 +111,5 @@ class ChadBot {
 ChadBot::get_instance();
 
 include_once(plugin_dir_path(__FILE__) . 'includes/api_endpoints.php');
+include_once(plugin_dir_path(__FILE__) . 'includes/Tool_call.php');
+include_once(plugin_dir_path(__FILE__) . 'includes/System_prompt.php');

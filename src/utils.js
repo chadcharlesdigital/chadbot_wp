@@ -9,6 +9,7 @@ export async function callLLM(prompt) {
                 // 'X-WP-Nonce': wpApiSettings.nonce // Example if using wp_localize_script
             },
             body: JSON.stringify({ message: prompt }),
+            credentials: 'include'
         });
 
         if (!response.ok) {
@@ -23,7 +24,7 @@ export async function callLLM(prompt) {
         const data = await response.json();
         console.log("LLM response data:", data);
         // Assuming the useful part of the response is directly in data or data.reply, adjust as needed
-        return data.content[0].text; // Or data.reply, or whatever your Express server actually returns
+        return data.message; // Or data.reply, or whatever your Express server actually returns
     } catch (error) {
         console.error("Failed to call LLM:", error);
         // Depending on how you want to handle errors, you might re-throw,
